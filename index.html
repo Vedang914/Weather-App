@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gradient-to-r from-blue-500 via-teal-400 to-cyan-500 min-h-screen flex items-center justify-center">
+
     <main class="bg-white bg-opacity-95 p-8 rounded-lg shadow-2xl">
         <header class="text-center mb-8">
             <h1 class="text-4xl font-bold text-gray-900">Weather Forecast</h1>
         </header>
-
+        
         <section class="mb-8">
             <label for="location" class="block text-gray-700 text-lg font-semibold">Enter Location:</label>
             <input type="text" id="location" class="mt-2 p-3 border border-gray-300 rounded w-full focus:border-teal-400 focus:ring-2 focus:ring-teal-400" placeholder="e.g., London, UK">
@@ -30,8 +31,25 @@
                 <select id="recentSearch" class="mt-2 p-3 border border-gray-300 rounded w-full focus:border-teal-400 focus:ring-2 focus:ring-teal-400"></select>
             </div>
         </section>
+        
 
+        <section id="weatherInfo" class="hidden">
+            <h2 id="locationName" class="text-2xl font-semibold text-gray-900"></h2>
+            <div id="currentWeather" class="bg-gray-100 p-6 rounded-lg shadow-inner">
+                <h3 class="font-semibold text-lg text-gray-800 mb-4">Current Weather:</h3>
+                <p id="currentTemp" class="text-xl text-gray-700"></p>
+                <p id="currentCondition" class="text-lg text-gray-700"></p>
+                <p id="currentHumidity" class="text-lg text-gray-700"></p>
+                <p id="currentWindSpeed" class="text-lg text-gray-700"></p>
+            </div>
+
+            <div id="forecast" class="mt-6">
+                <h3 class="font-semibold text-lg text-gray-800">Extended Forecast:</h3>
+                <div id="forecastDays" class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4"></div>
+            </div>
+        </section>
     </main>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
