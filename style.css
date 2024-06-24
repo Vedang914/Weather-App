@@ -1,5 +1,11 @@
 /* style.css */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Center the content and give it a responsive layout */
 body {
     background: linear-gradient(to right, #4A90E2, #50C9C3);
