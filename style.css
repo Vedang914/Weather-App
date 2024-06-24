@@ -1,0 +1,106 @@
+/* style.css */
+
+/* Center the content and give it a responsive layout */
+body {
+    background: linear-gradient(to right, #4A90E2, #50C9C3);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Custom styles for the main container */
+main {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Style the input fields and buttons */
+input, button, select {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, button:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(72, 187, 182, 0.5);
+}
+
+button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+#locationName {
+    color: #2C3E50;
+    margin-bottom: 1rem;
+}
+
+/* Weather info section */
+#currentWeather, #forecast {
+    background-color: #ECF0F1;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Style forecast day divs */
+#forecastDays > div {
+    background-color: #E0E4E5;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#forecastDays > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the weather info section */
+#currentWeather p, #forecastDays p {
+    color: #34495E;
+}
+
+#currentWeather h3, #forecast h3 {
+    color: #2C3E50;
+    margin-bottom: 1rem;
+}
+
+/* Horizontal line */
+hr {
+    margin: 1rem 0;
+    border: none;
+    border-top: 1px solid #E2E8F0;
+}
+
+/* Style for OR text */
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.text-center span {
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
